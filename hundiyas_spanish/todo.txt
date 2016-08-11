@@ -1,0 +1,64 @@
+//* al lanzar una bomba kiza en algun navegador o algo el kuadrado siga en verde i tendria k estar en rojo porke ia hemos lanzado una (a no ser k se pueda rebombardear). kiza habria k kambiar el fondo de kolor en la misma funcion de bombardear. KIZA SIRVA PONER ALGO KON MAS Z-INDEX DELANTE PARA K SE PRODUZKA UN ONMOUSEOUT I LUEGO KITALRO PARA K SE VUELVA A PRODUCIR UN ONMOUSEOVER.
+//(kreo)* BUG: a veces el ordenador kuando buska el barko de 3 bombardea sitios ke solo hai dos kasillas libres, rodeadas de X. es un bug. porke sucede??? hacer alerts ke diga ke barko buska, a ver si va a estar buskando el 2 porke el 3 se ha restado... aunke no kreo.
+//(kreo)* AL HUNDIR UN BARKO I SALE EL ALERT, LAS KOORDENADAS MARKADAS NO SE DESMARKAN!!! HABRIA K DESMARKARLAS UNA VEZ SE PULSE OK EN EL ALERT.
+//* KUIDADO PORKE HABIA UN BUG KE NO DEJABA PONER UN BARKO PORKE SE KREIA KE TENIA OTRO ADYACENTE KUANDO NO ERA ASI (SE IBA UNA FILA MAS ARRIBA A LA KOLUMNA OPUESTA). SE HA SOLUCIOAJDO KON UN IF PERO PODRIA KONTINUAR TENIENDO BUGS.
+
+//* substituir los confirm tambien ademas de los alert!!! (si estan desaktivados)
+
+//* poder rotar los barkos kon el teklado (usando varias teklas por si akaso, komo kontrol, etc. no usarintro por si akaso impide hacer aplikar kon el intro al formulario de opciones)
+//* hacer mas grande todavia el width del mensaje.
+//* si se da click en el boton de aplikar en las opciones i no se han kambaido nada, ke no salga el confirm ni nada. ke salga de la funcion i ia esta (igual k en el konektayas i en el buscayasminas),
+
+//* al akabar el juego ke no solo ponga "fin de juego" en el mensaje ke se muestra si no tambien si has ganado o has perdido.
+//* situar en un sitio mejor el mensaje i hacerlo mas largo para ke nunka okupe mas de una linea (ya ke en el height i line-height lo define kon el grosor especifiko para una sola linea de texto).
+
+//* al kitar los alerts (kon la opcion) ke salgan los mensajes unos segundos (el problema es ke no dejaran hacer click mientras salgan, aunke a lo mejor si)
+//* en el menu de opciones kiza deberia konfigurarse si mostrar o no los alerts al hundir un barko (o al menos en una variable, aunke mejor en una variable i en el menu de konfiguracion).
+
+//* poner un reloj en el lugar del kursor (komo si fuera la bomba) kuando haia ke esperar.
+
+//* restaurar bien los valores de las variables al iniciar el juego!
+
+//* ke al bombardear en rejilla si enkuentra una ia bombardeada en lugar de sumarle uno, ke le sume dos kon tal de hacer rejilla. si no se enkuentra nadahasta el final (esto esta mal porke a veces komienza la rejilla en medio del mapa i no al principio) entonces si ke hara lo de sumarle una.
+//* al bombardear en rejilla si se le suma 4 y el ancho del tablero es igual o menor (si se permitiera en las opciones tal ancho de tablero) estaria buscando mal. en el kaso de ser tan delgado deberia hacer rejilla en vertikal. kiza una opcion, aleatoria, de bombardear en rejilla en vertikal o en horizontal. i hacerlo solo en horizontal si en vertikal es demasiado pekeño (i viceversa).
+//* si al elegir una celda en la funcion de rejilla es maior ke cero i a su izkierda hai una ia bombardeada, ir sumando dos hasta llegar otra vez a la misma celda (si llega al tope vuelve a cero o 1 dependiendo si la inicial era par o impar) o enkuentre una libre. si no enkuentra nada libre i ia ha llegado a la celda inicial, hacer entonces lo de +1.
+//* para hacer mejor lo de la rejilla, si se buska el barko de 5, dberian bombardear de 4 en 4. si se buska el de 4, de 3 en 3, i asi...
+
+//* A VECES NO SALE LA BOMBA PORKE ESTA TIRANDO EL ORDENADOR PERO YA NO SALE EL MENSAJE DE PROCESANDO O KARGANDO... EL MENSAJE DEBERIA SALIR SIEMPRE MIENTRAS EL ORDENADOR PIENSA.
+//* al akabar el juego, perdiendo o ganando, al darle a aceptar no sale el mensaje de kargando... kiza haia ke hacer un settimeout a iniciar_juego o si lo hai prolongarlo mas milisegundos.
+
+//* no poder hacer click ni podr poner barkos ni hacer nada hasta k el juego haia kargado kompletamente, porke si no podria dar error...
+//* si el juego ha comenzado salir de la funcion de coger el barko (i kiza de alguno mas. pensar kuales deberian salir si el juego ha komenzado).
+
+* donde se precargan las imagenes, poner las imagenes de los barkos i todas las demas. todas hidden.
+
+* el mensaje tendria k verse mas!!!  sobretodo kuando se hunde un barko.
+* poner animaciones para hacer mas visual lo ke va sucediendo: al hundir un barko ke se vean llamas en todo el barko, etc. o kosas asi.
+* (pensarselo) pensarse si hacer una animacion al tirar una bomba (se puede poner la misma bomba encima de la celda e ir enkogiendola komo si se alejara hasta ke kolisione fikticiamente i entonces ke salga la X o la explosion). Mientras esta la animacion no deben ponder tokarse los kontroles del juego ni nada.
+* (pensarselo) poner animaciones (i poder elegir si aktivarlas o desaktivarlas en el menu de opciones, gracias a una variable global).
+
+* habria ke hacer la rejilla ke tambien hiciera rejilla en vertikal i no solo en horizontal.
+* kiza una funcion k se llame aktualizar markador i ke ponga siempre los barkos k has hundido (komo ahora) pero tambien los k han hundido.
+* para hacer mas inteligente el ordenador se podria hacer una matriz kon las celdas en las ke kabe el barko ke se buska i ordenarlas por su valor, de maior a menor. su valor seria el numero de posibilidades ke hai de ke el barko buskado kruce en esa celda (no ke komience en ella, si no ke tambien kruce) i eskoger para bombardear la ke mas posibilidades tiene.
+* (bug visual) en internet explorer al menos, al salir el reloj si no mueves el raton kuando desaparece el reloj aun keda en el kursor del raton la forma de reloj. solo se kita si se mueve.
+* (bug visual) depende en ke altos y anchos tengan las celdas, el boton de komenzar batalla i el texto de barkos hundidos se salen del espacio asignado (del div azul de los barkos).
+* (bug visual) BUG: al kambiar de kasilla kuando es el turno del ordenador (este esta pensando donde tirar o tirando) la kasilla nueva en la ke te posicionas no se marka i kuando pasa a tu turno sigue sin markarse (puede hacer ke se marke en rojo pero luego no se marka en verde al pasar tu turno). Se solucionaria markando en rojo kualkier kasilla kuando es el turno del ordenador i luego al ser el turno del usuario markarla en verde o en rojo dependiendo de si se puede o no. Solo hai ke volver a llamar a la funcion de markar_koordenada pero hai ke saber si es el tablero del usuario o del ordenador la ultima celda markada (se necesita una nueva variable global).
+* si se aciertan dos kasillas adyacentes el ordenador sabe si es el mismo barko o no kuando en realidad no deberia saberlo (menos en algunos kasos, ke podria deducirlo por deskarte). el ordenador deberia pensar ke el barko es el mismo hasta ke no lo hunda y haya bombardeado demasiadas kasillas o la distancia entre ellas, aunke sean pokas kasillas, es demasiado grande komo para ser el barko ke buska, etc..
+* en realidad deberia deskonocer de ke barko se trata al tokarlo pero deberia darse kuenta al hundir y darse kuenta de si ha tokado distintos barkos i no solo uno si ha hundido uno ke tiene mas kasillas ke las ke ha acertado o no estan en fila (perpendikulares).
+* estaria bien markar todas las koordenadas ke okupa un barko mientras se arrastra i no solo la X y la Y de su "punta".
+
+* (pensarselo) al komenzar el juego (al darle a "start" o "komenzar juego") kiza una kapa o algo ke impida tokar la pantalla del usuario (asi ia no saldria el kursor de la mano en los barkos ni se markarian koordenadas ni nada). ke solo funcione la del ordenador.
+* (pensarselo) en lugar de poner [numero_barco] en los barkos hundidos kiza podriamos poner una imagen de estos. o una imagen i encima de ella [numero_barco]. se podria reducir a la mitad o algo mas i poner los barkos ke has hundido tu i los barkos k t han hundido a ti.
+* (pensarselo) hacer ke kuando se haga click en un barko ia puesto mientras se arrastra uno, el barko ia puesto k se estaba arrastrando vuelva al div de los barkos no puestos i se arrastre el barko k estaba puesto.
+
+//(pensarselo) (mejor no)* kiza poner en el mensaje tambien kuando se ha tokado a un barko (i no se ha hundido, ya ke kuando se hunde ia dice tokado tambien).
+* (pensarselo) (kiza mejor ke no se alterne, ke se kambie en las opciones si eso)* hacer ke el ke komience el juego sea el ganador siempre o se vaya alternando. en las opciones debe salir siempre el ke ha komenzado la partida (el ultimo ganador si ha habido una partida antes). todo se puede solucionar kambiando la variable kreo, ia ke las opciones leen de ella.
+* (pensarselo) DEJAR IR A LAS OPCIONES KUANDO SE ARRASTRA UN BARKO. MIRAR KE NO HAIA PROBLEMAS LUEGO (SE DEBE ESKONDER EL BARKO KUANDO LAS OPCIONES ESTEN AKTIVAS I VOLVER A MOSTRARLO KUANDO SE CIERREN ESTAS).
+* (pensarselo) mostrar los barkos del ordenador una vez haya finalizado el juego habiendo ganado el ordenador, para demostrar ke no ha hecho trampas i si ke tenia barkos eskondidos.
+* (pensarselo) KIZA AL MARKAR UNA KASILLA EN EL TABLERO DEL USUARIO, MARKARLA EN ROJO SI HAY UN BARKO EN FORMA ADYACENTE I NO SE PUEDEN ADYACENTES.
+* (pensarselo) KE AL KARGAR SOLO SALGA EL MENSAJE DE KARGANDO Y POKO MAS.. HACER HIDDEN LOS BARKOS Y DEMAS PORKE KEDAN FEOS.
+* (pensarselo) un div flotante al lado del kursor kon las koordenadas de la kasilla kuando el raton este encima de una kasilla??
+* (pensarselo) SI NO SE PUEDE BOMBARDEAR EN UN SITIO, PORKE NO SE PUEDE REBOMBARDEAR O POR LO K SEA, SI SE PINTA LA KASILLA KE SEA DE KOLOR ROJO I UNA BOMBA TACHADA O ALGO ASI. SI SE PUEDE BOMBARDEAR, PONER LA KASILLA EN VERDE I LA BOMBA NORMAL.
+* (pensarselo) para una buena rejilla a las filas impares deberia tokarle kolumnas pares i viceversa (o al reves). si se han bombardeado todas, luego alternar (pares a pares e impares a impares o al reves).
+* (pensarselo) PENSARSE SI LAS ADYACENTES TAMBIEN SE HAN DE INKLUIR LAS KASILLAS EN DIAGONAL O NO...
+* (pensarselo) (bug visual) komo la bomba siempre se arrastra, invisible o no, al acerkar el kursor del raton al final de la ventana sale un skroll vertikal i/o horizontal.

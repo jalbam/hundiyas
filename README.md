@@ -13,3 +13,5 @@ Description
 
 Hundiyas is an open source Battleship alike game totally written in DHTML (JavaScript, CSS and HTML) that uses mouse.
 This cross-platform and cross-browser game was tested under BeOS, Linux, NetBSD, OpenBSD, FreeBSD, Windows and others.
+
+Official web site: http://hundiyas.tuxfamily.org/ (mirror at http://www.dhtmlgames.com/hundiyas/).
