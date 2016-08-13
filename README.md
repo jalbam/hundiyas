@@ -5,7 +5,7 @@ by Joan Alba Maldonado (joanalbamaldonadoNO_SPAM_PLEASE AT gmail DOT com, withou
 Battleship alike game totally written in DHTML.
 
 Version: 0.29a 
-Date: 12th June 2007 (approximately).
+- Date: 12th June 2007 (approximately).
 
 You can donate at http://sourceforge.net/project/project_donations.php?group_id=198303
 
