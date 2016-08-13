@@ -1,9 +1,10 @@
-Hundiyas
-========= by Joan Alba Maldonado (granvino@granvino.com)
+Hundiyas 
+========= 
+by Joan Alba Maldonado (joanalbamaldonadoNO_SPAM_PLEASE AT gmail DOT com, without NO_SPAM_PLEASE)
 
 Battleship alike game totally written in DHTML.
 
-Version: 0.29a
+Version: 0.29a 
 Date: 12th June 2007 (approximately).
 
 You can donate at http://sourceforge.net/project/project_donations.php?group_id=198303
