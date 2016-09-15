@@ -10,6 +10,9 @@ Version: 0.29a
 You can donate at http://sourceforge.net/project/project_donations.php?group_id=198303
 
 
+![ScreenShot](screenshot.gif)
+
+
 Description
 
 Open source Battleship (aka Battleships or Sea Battle) game totally written in DHTML (HTML, CSS and JavaScript). Highly configurable.
