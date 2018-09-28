@@ -13,7 +13,7 @@ You can donate at http://sourceforge.net/project/project_donations.php?group_id=
 ![ScreenShot](screenshot.gif)
 
 
-Description
+## Description
 
 Open source Battleship (aka Battleships or Sea Battle) game totally written in DHTML (HTML, CSS and JavaScript). Highly configurable.
 
@@ -29,5 +29,12 @@ You can find other modified and adapted versions of this game on the Internet, i
 
 This game has been tested under BeOS, Linux, NetBSD, OpenBSD, FreeBSD, Windows, Mac OS X, BlackBerry Tablet OS, Android, iOS and others.
 
+Play online in English: http://hundiyas.tuxfamily.org/hundiyas_english/
+
+Play online in English (mirror): http://www.dhtmlgames.com/hundiyas/hundiyas_english/
+
+Play online in Spanish: http://hundiyas.tuxfamily.org/hundiyas_spanish/
+
+Play online in Spanish (mirror): http://www.dhtmlgames.com/hundiyas/hundiyas_spanish/
 
 Official web site: http://hundiyas.tuxfamily.org/ (mirror at http://www.dhtmlgames.com/hundiyas/).
